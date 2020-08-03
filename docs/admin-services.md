@@ -1,17 +1,17 @@
 # Start or Stop the Services
 
-These commands you must know when you using the RabbitMQ of Websoft9
+These commands you must know when you using the Test of Websoft9
 
-### RabbitMQ
+### Test
 
 ```shell
-sudo systemctl start rabbitmq-server
-sudo systemctl stop rabbitmq-server
-sudo systemctl restart rabbitmq-server
-sudo systemctl status rabbitmq-server
+sudo systemctl start test-server
+sudo systemctl stop test-server
+sudo systemctl restart test-server
+sudo systemctl status test-server
 
-# you can use this debug mode if RabbitMQ service can't run
-rabbitmq-server console
+# you can use this debug mode if Test service can't run
+test-server console
 ```
 
 ### MySQL

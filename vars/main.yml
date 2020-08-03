@@ -3,11 +3,11 @@ region: "0"
 
 common_os_support: ["CentOS", "Ubuntu", "Amazon", "OracleLinux"]
 
-# rabbitmq variable
+# test variable
 
-rabbitmq_db_name: rabbitmq
-rabbitmq_db_user: rabbitmq
-rabbitmq_db_password: "123456"
+test_db_name: test
+test_db_user: test
+test_db_password: "123456"
 
 preend_certbot: True
 nginx_reverse_proxy_port: "8065"
@@ -22,12 +22,12 @@ docker_applications: 'phpmyadmin'
 
 # add databases and users
 mysql_databases:
- - name: rabbitmq
+ - name: test
  
 mysql_users:
- - name: rabbitmq
+ - name: test
    host: localhost
-   priv: 'rabbitmq.*:ALL'
+   priv: 'test.*:ALL'
 
 # init passsword of database
 init_db: 
@@ -37,11 +37,11 @@ init_db:
   
 # init password of applications
 init_application:
-  rabbitmq:
-    service: rabbitmq
-    database: rabbitmq 
-    database_user: rabbitmq
+  test:
+    service: test
+    database: test 
+    database_user: test
     database_host: localhost
     database_password: "123456"
     config_path:
-      - /opt/rabbitmq/config/config.json
+      - /opt/test/config/config.json

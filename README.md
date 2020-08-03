@@ -2,7 +2,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**RabbitMQ 自动化安装与部署**是由 [Websoft9](https://www.websoft9.com) 研发的 [RabbitMQ](https://rabbitmq.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 RabbitMQ，并预配置必要项，让原本复杂的安装和与初始化配置过程变得没有任何技术门槛。  
+**Test 自动化安装与部署**是由 [Websoft9](https://www.websoft9.com) 研发的 [Test](https://test.io/) 自动化安装程序，开发语言是 Ansible。使用本项目，只需要用户在 Linux 上运行一条命令，即可自动化安装 Test，并预配置必要项，让原本复杂的安装和与初始化配置过程变得没有任何技术门槛。  
 
 ## System Requirement
 
@@ -15,11 +15,11 @@
 | 私有云|  KVM, VMware, VirtualBox, OpenStack | 可选 |
 | 服务器配置 | 最低1核1G，安装时所需的带宽不低于10M |  建议采用按量100M带宽 |
 
-更多请见 [官方 System requirement](https://www.rabbitmq.com/download.html)
+更多请见 [官方 System requirement](https://www.test.com/download.html)
 
 ## Ecosystem
 
-本项目包含的核心组件为：可选 RabbitMQ2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
+本项目包含的核心组件为：可选 Test2.8.24/3.0.7/3.2.13/4.0.14/5.0.7/stable 多个版本
 
 更多请见 [参数表](/docs/zh/stack-components.md)
 
@@ -33,18 +33,18 @@ You can install it by All-in-one Installer. In addition, you can deploy image pu
 
 ```
 $ sudo su -
-$ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r rabbitmq
+$ wget -N https://raw.githubusercontent.com/Websoft9/ansible-linux/master/scripts/install.sh; bash install.sh -r test
 ```
 
 网络连接中断或网络不通，会导致SSH中断，安装就会失败，此时请重新安装。
 
 ### Image on Cloud 
 
-Follow our [RabbitMQ image](https://apps.websoft9.com/rabbitmq) for installation on major Cloud Platform
+Follow our [Test image](https://apps.websoft9.com/test) for installation on major Cloud Platform
 
 ## Documentation
 
-你所需要的初始化用户名、密码，路径参数RabbitMQ Administrator Guide ([English](https://support.websoft9.com/docs/rabbitmq/zh) | [简体中文](https://support.websoft9.com/docs/rabbitmq/zh))
+你所需要的初始化用户名、密码，路径参数Test Administrator Guide ([English](https://support.websoft9.com/docs/test/zh) | [简体中文](https://support.websoft9.com/docs/test/zh))
 
 ## Changelog
 
@@ -67,4 +67,4 @@ Yes
 
 #### 如何安装和查看最新版？
 
-本项目通过[RabbitMQ 官方仓库源](https://packagecloud.io/rabbitmq/rabbitmq-server/install)安装，每次安装均可保证为最新版本。通过[官方下载](https://www.rabbitmq.com/download.html)页面查看官方版号。 
+本项目通过[Test 官方仓库源](https://packagecloud.io/test/test-server/install)安装，每次安装均可保证为最新版本。通过[官方下载](https://www.test.com/download.html)页面查看官方版号。 

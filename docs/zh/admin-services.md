@@ -1,17 +1,17 @@
 # 服务启停
 
-使用由Websoft9提供的 RabbitMQ 部署方案，可能需要用到的服务如下：
+使用由Websoft9提供的 Test 部署方案，可能需要用到的服务如下：
 
-### RabbitMQ
+### Test
 
 ```shell
-sudo systemctl start rabbitmq-server
-sudo systemctl stop rabbitmq-server
-sudo systemctl restart rabbitmq-server
-sudo systemctl status rabbitmq-server
+sudo systemctl start test-server
+sudo systemctl stop test-server
+sudo systemctl restart test-server
+sudo systemctl status test-server
 
-# you can use this debug mode if RabbitMQ service can't run
-rabbitmq-server console
+# you can use this debug mode if Test service can't run
+test-server console
 ```
 
 ### MySQL
