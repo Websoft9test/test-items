@@ -1,3 +1,0 @@
-- name: check_test_service
-  debug:
-    var: check_test_service.stdout
